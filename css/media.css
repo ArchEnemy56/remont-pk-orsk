@@ -1,0 +1,446 @@
+/* ==========================================================================
+   PRO-PC — remont-pk-orsk.ru
+   css/media.css — ЕДИНЫЙ адаптивный файл для ВСЕХ страниц сайта.
+   Дополняет css/main.css. Контрольные точки:
+   1440 / 1280 / 1024 / 960 / 768 / 640 / 480 / 360 px.
+   Принцип: мобильная версия — адаптивная копия основного дизайна,
+   без изменения цветовой гаммы, карточек и общего стиля.
+   ========================================================================== */
+
+@media (max-width:1440px) {
+    /* контейнер 1200px полностью помещается — сетки не меняем,
+     чуть сужаем выпадающее меню «Услуги» */
+    .dd-menu {
+        width: 520px;
+    }
+}
+
+@media (max-width:1280px) {
+    .hwrap {
+        gap: 16px;
+    }
+
+    nav.main a.nl,
+    nav.main .dd-toggle {
+        padding: 10px 11px;
+        font-size: 14px;
+    }
+
+    .hphone {
+        font-size: 14px;
+    }
+
+    .hero-grid {
+        gap: 40px;
+    }
+
+    .bf1 {
+        left: -8px;
+    }
+
+    .bf2 {
+        right: -4px;
+    }
+}
+
+@media (max-width:1024px) {
+    /* сетки в 2 колонки */
+    .adv-grid,
+    .srv-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .price-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pf-grid,
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    nav.main {
+        display: none;
+    }
+
+    .hphone {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .hwrap {
+        gap: 18px;
+    }
+
+    .hwrap .btn.sm {
+        margin-left: auto;
+    }
+
+    .f-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:960px) {
+    section {
+        padding: 66px 0;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .cta-banner {
+        padding: 38px 30px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cta-banner h2 {
+        margin: 0 auto;
+    }
+
+    .cta-banner p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 560px;
+    }
+
+    .cta-btns {
+        justify-content: center;
+    }
+
+    .sec-head p {
+        max-width: 560px;
+    }
+}
+
+@media (max-width:768px) {
+    .svc-includes {
+        grid-template-columns: 1fr;
+    }
+
+    .phead-grid {
+        gap: 28px;
+        padding: 32px 0 10px;
+    }
+
+    .rev-card {
+        padding: 30px 24px;
+    }
+
+    .article h2 {
+        font-size: 22px;
+    }
+
+    .map-box {
+        height: 320px;
+    }
+
+    .mt {
+        margin-top: 48px;
+    }
+}
+
+@media (max-width:640px) {
+    section {
+        padding: 56px 0;
+    }
+
+    .adv-grid,
+    .srv-grid,
+    .price-grid,
+    .pf-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-banner {
+        padding: 32px 24px;
+    }
+
+    .bf1 {
+        left: 0;
+    }
+
+    .bf2 {
+        right: 0;
+    }
+
+    .f-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-stats {
+        gap: 22px;
+    }
+
+    .form-card {
+        padding: 26px 20px;
+    }
+
+    .hero-btns .btn {
+        flex: 1 1 100%;
+    }
+
+    .mt {
+        margin-top: 42px;
+    }
+
+    .page-head {
+        padding: 40px 0 8px;
+    }
+
+    .hero {
+        padding: 44px 0 54px;
+    }
+
+    .pf-filters {
+        gap: 6px;
+    }
+
+    .chip {
+        padding: 8px 14px;
+        font-size: 12.5px;
+    }
+
+    .article .cover {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width:480px) {
+    .badge-float {
+        padding: 9px 12px;
+        gap: 8px;
+    }
+
+    .badge-float b {
+        font-size: 13px;
+    }
+
+    .badge-float span {
+        font-size: 11px;
+    }
+
+    .badge-float .ic {
+        width: 20px;
+        height: 20px;
+    }
+
+    .fab {
+        width: 48px;
+        height: 48px;
+    }
+
+    .fab .ic {
+        width: 21px;
+        height: 21px;
+    }
+
+    .rev-card {
+        padding: 26px 20px;
+    }
+
+    .cta-banner {
+        padding: 26px 20px;
+    }
+
+    .pcard {
+        padding: 20px;
+    }
+
+    .pcard .pv {
+        font-size: 20px;
+    }
+
+    .lb {
+        padding: 14px;
+    }
+
+    .lb-x {
+        top: 12px;
+        right: 12px;
+        width: 42px;
+        height: 42px;
+    }
+
+    .lb-p,
+    .lb-n {
+        width: 40px;
+        height: 40px;
+    }
+
+    .lb-p {
+        left: 8px;
+    }
+
+    .lb-n {
+        right: 8px;
+    }
+
+    .lb-cap {
+        bottom: 14px;
+        font-size: 13px;
+        padding: 0 56px;
+    }
+
+    .modal {
+        padding: 14px;
+    }
+
+    .modal-box {
+        padding: 26px 20px;
+    }
+
+    .hstat b {
+        font-size: 24px;
+    }
+
+    .crumbs {
+        font-size: 12px;
+    }
+
+    .form-card h3 {
+        font-size: 19px;
+    }
+
+    .tl-item h3 {
+        font-size: 16px;
+    }
+
+    .sec-head {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width:360px) {
+    .container {
+        padding: 0 14px;
+    }
+
+    .hwrap {
+        gap: 10px;
+        height: 64px;
+    }
+
+    .mmenu {
+        inset: 64px 0 0 auto;
+        padding: 20px 16px 36px;
+    }
+
+    main {
+        padding-top: 64px;
+    }
+
+    .logo {
+        font-size: 15px;
+        gap: 8px;
+    }
+
+    .logo .lic {
+        width: 34px;
+        height: 34px;
+    }
+
+    .logo .lic .ic {
+        width: 19px;
+        height: 19px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .float-bar {
+        right: 12px;
+        bottom: 12px;
+        gap: 9px;
+    }
+
+    .fab {
+        width: 44px;
+        height: 44px;
+    }
+
+    .fab .ic {
+        width: 19px;
+        height: 19px;
+    }
+
+    .tl-item {
+        padding: 0 0 28px 64px;
+    }
+
+    .tl-num {
+        width: 48px;
+        height: 48px;
+        font-size: 15px;
+        border-radius: 14px;
+    }
+
+    .tl::before {
+        left: 23px;
+    }
+
+    .price-tag {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .price-tag .ic {
+        width: 16px;
+        height: 16px;
+    }
+
+    .overline {
+        font-size: 11.5px;
+        padding: 6px 13px;
+    }
+
+    .adv {
+        padding: 18px;
+    }
+
+    .srv {
+        padding: 22px 18px;
+    }
+
+    .pcard {
+        padding: 18px;
+    }
+
+    .faq-q {
+        padding: 16px 18px;
+        font-size: 14.5px;
+    }
+
+    .faq-a div {
+        padding: 0 18px 18px;
+    }
+
+    .badge-float {
+        display: none;
+    }
+
+    .map-box {
+        height: 260px;
+    }
+
+    .hero-stats {
+        gap: 16px;
+    }
+
+    .hstat b {
+        font-size: 22px;
+    }
+}

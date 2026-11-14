@@ -1,0 +1,24 @@
+📁 robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /*?utm=
+Disallow: /*?from=
+
+User-agent: Yandex
+Allow: /
+Disallow: /admin/
+Disallow: /*?utm=
+Disallow: /*?from=
+Clean-param: utmsource&utmmedium&utm_campaign
+
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /*?utm=
+Disallow: /*?from=
+
+Sitemap: https://remont-pk-orsk.ru/sitemap.xml
+
+Host: https://remont-pk-orsk.ru
